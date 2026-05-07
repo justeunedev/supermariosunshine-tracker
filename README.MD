@@ -27,6 +27,7 @@ Virustotal de la dernière release : [Rapport VirusTotal de la 1.0](https://www.
 
 ## 📜 Sources
 Screenshots et information : [Mario Wiki](https://www.mariowiki.com/Super_Mario_Sunshine) et [Mario Party Legacy](https://mariopartylegacy.com/guides/super-mario-sunshine/corona-mountain-blue-coins) (Mont Corona)
+
 Maps : [Branflakv](https://www.reddit.com/r/NintendoSwitch/comments/j56j95/blue_coin_maps_for_mario_sunshine/?tl=fr) et [Mario Party Legacy](https://mariopartylegacy.com/guides/super-mario-sunshine/corona-mountain-blue-coins) (Mont Corona)
 
 ---
