@@ -16,24 +16,6 @@ Ce projet a été conçu pour offrir une interface claire et visuelle, palliant 
 
 ---
 
-## 📂 Structure du Projet
-L'organisation des fichiers a été pensée pour être la plus logique et segmentée possible :
-
-Plaintext
-├── index.html          # Structure principale de l'application
-├── style.css           # Design et mise en forme
-├── app.js              # Logique métier, gestion des événements et stockage
-├── data/               # Dossier des fichiers de données JS
-│   ├── delfino.js      # Données pour la Place Delfino
-│   ├── bianco.js       # Données pour les Collines Bianco
-│   └── ...             # Autres zones
-└── images/             # Dossier des ressources visuelles
-├── delfino/        # Screenshots et cartes de la Place Delfino
-├── bianco/         # Screenshots et cartes des Collines Bianco
-└── ...
-
----
-
 ## 🚀 Installation et Utilisation
 Clonez ce dépôt, téléchargez les fichiers ou récupérez juste la dernière [Release](https://github.com/justeunedev/supermariosunshine-tracker/releases/latest) en zip.
 
