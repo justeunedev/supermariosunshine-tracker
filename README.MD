@@ -28,9 +28,9 @@ Plaintext
 │   ├── bianco.js       # Données pour les Collines Bianco
 │   └── ...             # Autres zones
 └── images/             # Dossier des ressources visuelles
-    ├── delfino/        # Screenshots et cartes de la Place Delfino
-    ├── bianco/         # Screenshots et cartes des Collines Bianco
-    └── ...
+├── delfino/        # Screenshots et cartes de la Place Delfino
+├── bianco/         # Screenshots et cartes des Collines Bianco
+└── ...
 
 ---
 
