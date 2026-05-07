@@ -1,0 +1,324 @@
+:root {
+    --bg-color: #f0f8ff;
+    --primary-color: #0077b6;
+    --accent-color: #ffb703;
+    --text-color: #333;
+}
+
+body {
+    font-family: system-ui, -apple-system, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 20px;
+    max-width: 800px;
+    margin-inline: auto;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.progress-container {
+    background-color: #ddd;
+    border-radius: 20px;
+    height: 30px;
+    position: relative;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.progress-bar {
+    background-color: var(--accent-color);
+    height: 100%;
+    width: 0%;
+    transition: width 0.3s ease;
+}
+
+#progress-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+.level-section {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.coin-item {
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+    transition: opacity 0.3s;
+}
+
+.coin-item.collected {
+    opacity: 0.5;
+}
+
+.coin-item:last-child {
+    border-bottom: none;
+}
+
+input[type="checkbox"] {
+    margin-right: 15px;
+    transform: scale(1.5);
+    accent-color: var(--primary-color);
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.coin-image-container {
+    margin-right: 15px;
+    flex-shrink: 0;
+}
+
+.coin-img {
+    width: 100px;
+    height: 75px;
+    object-fit: cover;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+.coin-img:hover {
+    transform: scale(1.8);
+    z-index: 10;
+    position: relative;
+}
+
+.coin-details {
+    flex-grow: 1;
+    line-height: 1.4;
+}
+
+.coin-details strong {
+    color: var(--primary-color);
+}
+
+.coin-details label {
+    cursor: pointer;
+    display: block;
+}
+.zone-map-container {
+    margin-bottom: 20px;
+    padding: 10px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.zone-map-container p {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: var(--primary-color);
+}
+
+.zone-map {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    cursor: zoom-in;
+    transition: transform 0.3s;
+}
+
+.zone-map:hover {
+    transform: scale(1.02);
+}
+
+.coins-list {
+    border-top: 2px solid var(--bg-color);
+    margin-top: 15px;
+}
+details.level-section {
+    background: white;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+summary.zone-header {
+    padding: 15px;
+    cursor: pointer;
+    background: var(--primary-color);
+    color: white;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transition: background 0.3s;
+}
+
+summary.zone-header::-webkit-details-marker {
+    display: none;
+}
+
+summary.zone-header:hover {
+    background: #005f92;
+}
+
+.zone-header-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.zone-progress-container {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    height: 12px;
+    position: relative;
+    overflow: hidden;
+}
+
+.zone-progress-bar {
+    background: var(--accent-color);
+    height: 100%;
+    width: 0%;
+    transition: width 0.3s ease;
+}
+
+.zone-content {
+    padding: 15px;
+}
+
+.coin-img, .zone-map {
+    cursor: zoom-in;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.modal.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.modal img {
+    max-width: 90%;
+    max-height: 90vh;
+    border-radius: 8px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+}
+
+.close-modal {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.close-modal:hover {
+    color: var(--accent-color);
+}
+.map-description {
+    font-size: 0.9em;
+    color: #555;
+    font-style: italic;
+    margin-top: 10px;
+    padding: 0 15px;
+    line-height: 1.4;
+}
+
+.zone-maps-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.map-item {
+    flex: 1;
+    min-width: 250px;
+    max-width: 400px;
+    text-align: center;
+}
+
+.clickable-img {
+    cursor: zoom-in;
+    transition: transform 0.2s;
+}
+
+footer {
+    margin-top: 50px;
+    padding: 30px;
+    text-align: center;
+    border-top: 2px solid #ddd;
+    color: #666;
+    font-size: 0.9em;
+}
+
+footer a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.save-controls {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+#export-btn, .import-btn {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.9em;
+    font-family: inherit;
+    font-weight: bold;
+    transition: background 0.2s, transform 0.1s;
+    display: inline-block;
+}
+
+#export-btn:hover, .import-btn:hover {
+    background-color: #005f92;
+    transform: translateY(-2px);
+}
+
+#export-btn:active, .import-btn:active {
+    transform: translateY(0);
+}

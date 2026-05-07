@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Mario Sunshine Blue Coins Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="Logo Super Mario Sunshine" width=25%>
+        <h2>Tracker de Pièces Bleues</h1>
+        <div class="progress-container">
+            <div id="progress-bar" class="progress-bar"></div>
+            <span id="progress-text">0 / 240</span>
+        </div>
+
+        <div class="save-controls">
+            <button id="export-btn">💾 Exporter ma progression</button>
+            <label for="import-file" class="import-btn">📂 Importer ma progression</label>
+            <input type="file" id="import-file" accept=".json" style="display: none;">
+        </div>
+    </header>
+
+    <main id="app-container"></main>
+
+    <div id="image-modal" class="modal">
+        <span class="close-modal">&times;</span>
+        <img id="modal-img" src="" alt="Image en grand">
+    </div>
+
+    <script src="data/delfino.js"></script>
+    <script src="data/bianco.js"></script>
+    <script src="data/ricco.js"></script>
+    <script src="data/gelato.js"></script>
+    <script src="data/pinna.js"></script>
+    <script src="data/sirena.js"></script>
+    <script src="data/noki.js"></script>
+    <script src="data/pianta.js"></script>
+    <script src="data/corona.js"></script>
+    
+    <script src="app.js"></script>
+    <footer>
+        <p>Made with ❤️ by Arniael (<a href="https://github.com/justeunedev" target="__blank">Juste Une Dev</a>)<br>Avec l'aide de Gemini 3.1 Pro</p>
+        <div class="sources">
+            <p><u>Sources</u><br>
+                Images Emplacement Pièces : <a href="https://www.mariowiki.com/" target="__blank">Super Mario Wiki</a> et <a href="https://mariopartylegacy.com/guides/super-mario-sunshine/corona-mountain-blue-coins" target="__blank">Mario Party Legacy</a><br>
+                Images Cartes : <a href="https://www.reddit.com/r/NintendoSwitch/comments/j56j95/blue_coin_maps_for_mario_sunshine/" target="__blank">Branflakv</a> et <a href="https://mariopartylegacy.com/guides/super-mario-sunshine/corona-mountain-blue-coins" target="__blank">Mario Party Legacy</a></p>
+        </div>
+    </footer>
+</body>
+</html>
