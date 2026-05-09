@@ -3,6 +3,8 @@
 
 Ce projet a été conçu pour offrir une interface claire et visuelle, palliant l'absence de suivi détaillé dans le jeu original.
 
+Une version en ligne, hébergée par Github Pages, est disponible sur [sunshine-tracker.arniael.eu](https://sunshine-tracker.arniael.eu). Nous vous recommandons quand même de l'utiliser en local.
+
 ---
 
 ## ✨ Fonctionnalités
